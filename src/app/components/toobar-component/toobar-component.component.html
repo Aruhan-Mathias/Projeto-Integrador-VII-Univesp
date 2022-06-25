@@ -1,0 +1,36 @@
+<mat-toolbar>
+
+  <button mat-icon-button aria-label="icone menu">
+
+    <mat-icon>pin_drop</mat-icon>
+
+  </button>
+
+  <span>São Paulo</span>
+
+  <span class="spacer"></span>
+
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+
+  <mat-menu #menu="matMenu">
+
+    <button mat-menu-item>
+      <mat-icon>share</mat-icon>
+      <span>Compartilhar</span>
+    </button>
+
+    <button mat-menu-item disabled>
+      <mat-icon>screenshot</mat-icon>
+      <span>Captura de Tela</span>
+    </button>
+
+    <button mat-menu-item>
+      <mat-icon>notifications_off</mat-icon>
+      <span>Reativar Som</span>
+    </button>
+
+  </mat-menu>
+
+</mat-toolbar>
